@@ -15,6 +15,27 @@
     padding:0;
     font-family: var(--base-font);
 }
+.homeMain{
+    position:absolute;
+    background: url('./images/homeBackground.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 90%;
+}
+.experienceMain{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/downtown.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 90%;
+}
 .backgroundImage{
     position:absolute;
     object-fit: cover;
@@ -78,10 +99,67 @@ a{
 }
   
 .navbar__link:hover {
-    transform: translateY(-2px);
+    font-size:1.05rem;
+    font-weight: bold;
 }
 
 .navbar__link--active {
-border-bottom: 3px solid var(--mainColor);
-transition: border-bottom .5s ease-in-out;
+    border-bottom: 3px solid var(--mainColor);
+    transition: border-bottom .5s ease-in-out;
+}
+
+.homeSection{
+    position: absolute;
+    top: -40px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.blurCard{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    line-height: 1; 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    width: 1600px;
+    max-width: 80%;
+    height: fit-content;
+    padding: 10px;
+    margin-top:80px;
+    margin-bottom:80px;
+}
+.pictureSection{
+    width: 100%;
+}
+.profilePicture{
+    object-fit:cover;
+    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+    margin-top: 10px;
+    margin-bottom: 2vw;
+}
+.cardText{
+    width: 80%;
+    line-height:150%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.experienceMain li{
+    margin: 100px 10px;
 }

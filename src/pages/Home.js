@@ -1,7 +1,9 @@
+const { default: HomeSection } = require("../components/HomeSection")
+
 const Home = () =>{
   return (
     <main className = "homeMain">
-      <img src={require(`../images/homeBackground.jpg`).default} className = "backgroundImage"/>
+      <HomeSection/>
     </main>
   );
 }
